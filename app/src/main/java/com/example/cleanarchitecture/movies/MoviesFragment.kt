@@ -113,7 +113,7 @@ class MoviesFragment : Fragment() {
 
     private fun setSearchList() {
 
-        homeViewModel.movieResult.observe(viewLifecycleOwner, Observer {
+        homeViewModel.movieResult.observe(viewLifecycleOwner, {
             if (it.isNullOrEmpty()) {
                 binding.moviesProgressBar.visibility = View.GONE
                 binding.notFoundText.visibility = View.VISIBLE

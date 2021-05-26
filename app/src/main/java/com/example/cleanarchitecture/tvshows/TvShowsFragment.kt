@@ -115,7 +115,7 @@ class TvShowsFragment : Fragment() {
     }
 
     private fun setSearchList() {
-        homeViewModel.tvShowResult.observe(viewLifecycleOwner, Observer { tvShows ->
+        homeViewModel.tvShowResult.observe(viewLifecycleOwner, { tvShows ->
             if (tvShows.isNullOrEmpty()) {
                 binding.showsProgressBar.visibility = View.GONE
                 binding.notFoundText.visibility = View.VISIBLE
