@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mediaImage">mediaImage</string>
+    <string name="click_for_details">Click for Details</string>
+    <string name="baseUrlImage">http://image.tmdb.org/t/p/w500%s</string>
+</resources>

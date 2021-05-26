@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Showbiz</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_shows">TV Shows</string>
+    <string name="favorite">Favorite</string>
+    <string name="click_for_details">Click for details</string>
+    <string name="image">Image</string>
+    <string name="search">Search</string>
+    <string name="no_data">No Data</string>
+    <string name="favbutton">favButton</string>
+    <string name="detailimage">detailImage</string>
+    <string name="error">Something went wrong</string>
+    <string name="baseUrlImage">http://image.tmdb.org/t/p/w500%s</string>
+</resources>

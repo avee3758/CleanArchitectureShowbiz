@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity">
+
+    <Button
+        android:id="@+id/detailBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/ic_arrow_back"
+
+        />
+
+    <ImageView
+        android:id="@+id/detail_poster"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:contentDescription="@string/detailimage"
+        android:scaleType="centerCrop"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/detail_poster"
+        app:layout_constraintStart_toStartOf="@+id/detail_poster"
+        app:layout_constraintTop_toTopOf="@id/detail_poster"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:contentDescription="@string/detailimage"
+        />
+
+    <TextView
+        android:id="@+id/detail_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/detail_image"
+        app:layout_constraintEnd_toEndOf="@id/detail_image"
+        app:layout_constraintStart_toStartOf="@id/detail_image"
+        tools:text="Movie Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        />
+
+    <TextView
+        android:id="@+id/detail_movie_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/detail_movie_name"
+        tools:text="Movie Description"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center_horizontal"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/detail_fav_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:maxImageSize="@dimen/_25sdp"
+        app:rippleColor="@color/white"
+        android:src="@drawable/ic_not_favorite"
+        android:contentDescription="@string/favbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
