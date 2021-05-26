@@ -81,4 +81,5 @@ dependencies {
     implementation "androidx.sqlite:sqlite-ktx:$sqlite_version"
     //Leak Canary
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leak_canary_version"
+    implementation "androidx.multidex:multidex:$multidex_version"
 }
