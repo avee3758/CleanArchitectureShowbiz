@@ -79,4 +79,6 @@ dependencies {
 
     implementation "net.zetetic:android-database-sqlcipher:$sqlcipher_version"
     implementation "androidx.sqlite:sqlite-ktx:$sqlite_version"
+    //Leak Canary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leak_canary_version"
 }
